@@ -1,71 +1,75 @@
 ---
 title: Introduction
-description: "Welcome to the home of your new documentation"
+description: "AdventShare is a web application that allows schools to donate or claim unused items. The goal is to help schools share resources more efficiently and reduce waste.
+
+This documentation covers how the project is structured, how to set it up locally, and how to contribute."
 ---
 
-<img
-  className="block dark:hidden"
-  src="/images/hero-light.png"
-  alt="Hero Light"
-/>
-<img
-  className="hidden dark:block"
-  src="/images/hero-dark.png"
-  alt="Hero Dark"
-/>
+## 🧰 Tech Stack
 
-## Setting up
+AdventShare is built using the following technologies:
 
-The first step to world-class documentation is setting up your editing environments.
+- **Server**: Hetzner  
+- **Database**: [Supabase](https://supabase.com/)
+- **Auth Provider**: [Clerk](https://clerk.dev/)
+- **JavaScript Runtime**: [Bun](https://bun.sh/)
+- **Programming Language**: TypeScript (frontend & backend)
+- **Framework**: [Next.js](https://nextjs.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **UI Components**: [shadcn/ui](https://ui.shadcn.com/)
+- **Toasts**: [sonner](https://sonner.emilkowal.dev/)
+- **Input Validation**: [zod](https://zod.dev/)
+- **Date Handling**: [date-fns](https://date-fns.org/)
+- **Secure Server Actions**: [next-safe-action](https://github.com/TheEdoRan/next-safe-action)
 
-<CardGroup cols={2}>
-  <Card
-    title="Edit Your Docs"
-    icon="pen-to-square"
-    href="https://mintlify.com/docs/quickstart"
-  >
-    Get your docs set up locally for easy development
-  </Card>
-  <Card
-    title="Preview Changes"
-    icon="image"
-    href="https://mintlify.com/docs/development"
-  >
-    Preview your changes before you push to make sure they're perfect
-  </Card>
-</CardGroup>
+---
 
-## Make it yours
 
-Update your docs to your brand and add valuable content for the best user conversion.
 
-<CardGroup cols={2}>
-  <Card
-    title="Customize Style"
-    icon="palette"
-    href="https://mintlify.com/docs/settings/global"
-  >
-    Customize your docs to your company's colors and brands
-  </Card>
-  <Card
-    title="Reference APIs"
-    icon="code"
-    href="https://mintlify.com/docs/api-playground/openapi"
-  >
-    Automatically generate endpoints from an OpenAPI spec
-  </Card>
-  <Card
-    title="Add Components"
-    icon="screwdriver-wrench"
-    href="https://mintlify.com/docs/content/components/accordions"
-  >
-    Build interactive features and designs to guide your users
-  </Card>
-  <Card
-    title="Get Inspiration"
-    icon="stars"
-    href="https://mintlify.com/customers"
-  >
-    Check out our showcase of our favorite documentation
-  </Card>
+## Setting Up
+
+Before getting started with the project, make sure you have the following prerequisites installed and configured:
+
+- **[Bun](https://bun.sh/)** – a fast JavaScript runtime used instead of Node.js
+- A **Supabase** project with the necessary tables and configurations
+- A **Clerk** account for handling authentication
+- Access to the **`.env`** file containing the required environment variables (you can use `.env.example` as a starting point)
+
+For detailed instructions on cloning the repository, installing dependencies, and running the project locally, see the [Quickstart](http://localhost:3000/quickstart) and [Development](http://localhost:3000/development) pages.
+
+
+## Update your docs
+
+Add content directly in your files with MDX syntax and React components. You can use any of our components, or even build your own.
+
+<CardGroup>
+
+<Card title="Add Content With MDX" icon="file" href="/essentials/markdown">
+  Add content to your docs with MDX syntax.
+</Card>
+
+<Card
+  title="Add Code Blocks"
+  icon="square-code"
+  href="/essentials/code"
+>
+  Add code directly to your docs with syntax highlighting.
+</Card>
+
+<Card
+  title="Add Images"
+  icon="image"
+  href="/essentials/images"
+>
+  Add images to your docs to make them more engaging.
+</Card>
+
+<Card
+  title="Add Custom Components"
+  icon="puzzle-piece"
+  href="/essentials/reusable-snippets"
+>
+  Add templates to your docs to make them more reusable.
+</Card>
+
 </CardGroup>
