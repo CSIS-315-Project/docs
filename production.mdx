@@ -1,0 +1,55 @@
+---
+title: 'Production'
+description: 'Information for working on and contributing to AdventShare'
+---
+
+<Info>
+  **Prerequisite**: Make sure you have **Node.js v19+** and **Bun** installed. Also ensure you have a configured `.env` file with the necessary environment variables.
+</Info>
+
+## Project Structure
+
+```text
+├── app/                # NextJS app directory
+├── components/         # Reusable UI components
+├── lib/                # Utility functions and helpers
+├── styles/             # Tailwind config or global styles
+├── public/             # Static assets
+├── types/              # TypeScript types
+├── .env.example        # Example environment variables
+├── bun.lockb           # Bun lockfile
+└── next.config.js      # NextJS config
+```
+
+## Development Workflow
+
+- Create a new branch from `main`
+- Use clear and conventional commit messages
+- Push your changes to GitHub
+- Open a pull request for code review
+- Ensure linting and formatting checks pass before merging
+
+
+Running the Dev Server
+Install dependencies and run the development server using Bun:
+
+<CodeGroup> 
+```bash bun
+bun install bun dev 
+``` 
+</CodeGroup>
+Your app will be available at http://localhost:3000.
+
+
+## Dependencies Overview
+
+- **Next.js** – React framework with server-side rendering  
+- **TailwindCSS** – Utility-first CSS framework  
+- **Clerk** – Authentication  
+- **Supabase** – Backend (PostgreSQL, auth, storage)  
+- **Bun** – JS runtime and package manager  
+- **shadcn/ui** – Headless component UI  
+- **sonner** – Toast notifications  
+- **zod** – Input validation  
+- **date-fns** – Date utility library  
+- **next-safe-action** – Type-safe server actions
